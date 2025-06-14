@@ -1,11 +1,23 @@
 from setuptools import find_packages, setup
 
 setup(
-    name = 'Medical Chatbot',
-    version= '0.0.0',
-    author= 'Boktiar Ahmed Bappy',
-    author_email= 'entbappy73@gmail.com',
+    name = 'BuddyAI',
+    version= '0.0.1',
+    author= 'Tushar Patole',
+    author_email= 'mailtotusharpatole@gmail.com',
     packages= find_packages(),
-    install_requires = []
-
+    install_requires = [
+        'sentence-transformers==2.2.2',
+        'pinecone-client==2.2.4',
+        'langchain==0.0.225',
+        'langchain-community',
+        'flask',
+        'pypdf',
+        'python-dotenv',
+        'requests==2.31.0',
+        'huggingface-hub==0.16.4',
+        'torch==2.0.1',
+        'transformers==4.30.2'
+    ],
+    python_requires='>=3.10',
 )
